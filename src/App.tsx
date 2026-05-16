@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import bunadEntriesRaw from './assets/bunader/bunader_with_locations.json'
 import { NorwayMap } from './components/NorwayMap'
 import {
   averageDistanceKm,
@@ -11,9 +12,13 @@ import {
 } from './lib/game'
 import type { BunadEntry, Coordinates, NorwayGeoJson, RoundResult } from './types'
 
-const BUNAD_DATA_URL = '/bunader/bunads.json'
 const MAP_DATA_URL = '/Norge-L.geojson'
 const DECORATIVE_FLAG_COUNT = 6
+const ROUND_SIZE = 10
+const bunadImageModules = import.meta.glob('./assets/bunader/*.{jpg,jpeg,png,webp,avif}', {
+  eager: true,
+  import: 'default',
+}) as Record<string, string>
 
 async function loadJson<T>(url: string): Promise<T> {
   const response = await fetch(url)
@@ -52,16 +57,41 @@ function isBunadEntry(value: unknown): value is BunadEntry {
 
 function parseBunadEntries(value: unknown): BunadEntry[] {
   if (!Array.isArray(value) || value.length === 0) {
-    throw new Error('Expected /bunader/bunads.json to contain at least one bunad entry.')
+    throw new Error('Forventet minst én bunadoppføring i datasettet.')
   }
 
   if (!value.every(isBunadEntry)) {
     throw new Error(
-      'Invalid bunad data. Each entry must include id, label, place, image, and coordinates.',
+      'Ugyldige bunaddata. Hver oppføring må ha id, label, place, image og coordinates.',
     )
   }
 
   return value
+}
+
+function resolveBunadImagePath(imagePath: string) {
+  const fileName = imagePath.split('/').at(-1)
+
+  if (!fileName) {
+    return imagePath
+  }
+
+  const matchedEntry = Object.entries(bunadImageModules).find(([modulePath]) =>
+    modulePath.endsWith(`/${fileName}`),
+  )
+
+  return matchedEntry?.[1] ?? imagePath
+}
+
+function hydrateBunadEntries(value: unknown): BunadEntry[] {
+  return parseBunadEntries(value).map((entry) => ({
+    ...entry,
+    image: resolveBunadImagePath(entry.image),
+  }))
+}
+
+function buildRoundDeck(entries: BunadEntry[]) {
+  return shuffleItems(entries).slice(0, Math.min(ROUND_SIZE, entries.length))
 }
 
 function NorwayFlag({ className = '', delayMs = 0 }: { className?: string; delayMs?: number }) {
@@ -92,7 +122,7 @@ function CelebrationRibbon({ compact = false }: { compact?: boolean }) {
           <NorwayFlag key={index} className="norway-flag" delayMs={index * 140} />
         ))}
       </div>
-      <span className="celebration-ribbon__text">17. mai edition</span>
+      <span className="celebration-ribbon__text">17. mai-utgave</span>
     </div>
   )
 }
@@ -117,19 +147,16 @@ function App() {
       setError(null)
 
       try {
-        const [mapData, rawEntries] = await Promise.all([
-          loadJson<NorwayGeoJson>(MAP_DATA_URL),
-          loadJson<unknown>(BUNAD_DATA_URL),
-        ])
+        const mapData = await loadJson<NorwayGeoJson>(MAP_DATA_URL)
 
         if (!isActive) {
           return
         }
 
-        const parsedEntries = parseBunadEntries(rawEntries)
+        const parsedEntries = hydrateBunadEntries(bunadEntriesRaw)
         setGeoJson(mapData)
         setBunads(parsedEntries)
-        setDeck(shuffleItems(parsedEntries))
+        setDeck(buildRoundDeck(parsedEntries))
         setRoundIndex(0)
         setGuess(null)
         setResults([])
@@ -142,7 +169,7 @@ function App() {
         setError(
           loadError instanceof Error
             ? loadError.message
-            : 'Something went wrong while loading the map and bunad data.',
+            : 'Noe gikk galt ved lasting av kartet og bunaddataene.',
         )
       } finally {
         if (isActive) {
@@ -166,12 +193,12 @@ function App() {
   const bestResult =
     results.length > 0
       ? results.reduce((best, result) =>
-          result.distanceKm < best.distanceKm ? result : best,
-        )
+        result.distanceKm < best.distanceKm ? result : best,
+      )
       : null
 
   function restartGame(sourceEntries = bunads) {
-    setDeck(shuffleItems(sourceEntries))
+    setDeck(buildRoundDeck(sourceEntries))
     setRoundIndex(0)
     setGuess(null)
     setResults([])
@@ -217,9 +244,9 @@ function App() {
       <main className="app-shell app-shell--state">
         <section className="state-card">
           <CelebrationRibbon compact />
-          <span className="eyebrow">Loading</span>
-          <h1>Bunadkart</h1>
-          <p>Preparing the Norway map and shuffling the first round.</p>
+          <span className="eyebrow">Laster</span>
+          <h1>BunadGuessr</h1>
+          <p>Gjør klart Norgeskartet og blander første runde.</p>
         </section>
       </main>
     )
@@ -230,12 +257,12 @@ function App() {
       <main className="app-shell app-shell--state">
         <section className="state-card">
           <CelebrationRibbon compact />
-          <span className="eyebrow">Load error</span>
-          <h1>Could not start the game</h1>
+          <span className="eyebrow">Lastefeil</span>
+          <h1>Kunne ikke starte spillet</h1>
           <p>{error}</p>
           <div className="action-row">
             <button type="button" className="button" onClick={() => setReloadToken((value) => value + 1)}>
-              Try again
+              Prøv igjen
             </button>
           </div>
         </section>
@@ -248,9 +275,9 @@ function App() {
       <main className="app-shell app-shell--state">
         <section className="state-card">
           <CelebrationRibbon compact />
-          <span className="eyebrow">No data</span>
-          <h1>No bunads found</h1>
-          <p>Add entries to <code>public/bunader/bunads.json</code> and reload.</p>
+          <span className="eyebrow">Ingen data</span>
+          <h1>Fant ingen bunader</h1>
+          <p>Legg til oppføringer i <code>src/assets/bunader/bunader_with_locations.json</code> og last inn på nytt.</p>
         </section>
       </main>
     )
@@ -262,23 +289,23 @@ function App() {
         <header className="app-header">
           <div className="app-header__lead">
             <CelebrationRibbon />
-            <span className="eyebrow">Finished</span>
-            <h1>Bunadkart</h1>
+            <span className="eyebrow">Ferdig</span>
+            <h3>BunadGuessr</h3>
             <p className="intro">
-              The round deck is complete. Your average miss distance and per-bunad results are below.
+              Runden er ferdig. Gjennomsnittlig avstand og resultat for hver bunad vises under.
             </p>
           </div>
           <div className="progress-strip">
             <div className="progress-pill">
-              <span>Total score</span>
+              <span>Total poengsum</span>
               <strong>{totalScore.toLocaleString()}</strong>
             </div>
             <div className="progress-pill">
-              <span>Average miss</span>
+              <span>Snittbom</span>
               <strong>{formatDistanceKm(averageDistance)}</strong>
             </div>
             <div className="progress-pill">
-              <span>Rounds</span>
+              <span>Runder</span>
               <strong>{results.length}</strong>
             </div>
           </div>
@@ -287,18 +314,18 @@ function App() {
         <section className="summary-card card">
           <div className="summary-hero">
             <div>
-              <span className="eyebrow">Final result</span>
-              <h2>{totalScore.toLocaleString()} points</h2>
+              <span className="eyebrow">Sluttresultat</span>
+              <h2>{totalScore.toLocaleString()} poeng</h2>
               <p>
-                Best accuracy:{' '}
+                Beste treff:{' '}
                 {bestResult
-                  ? `${bestResult.label} at ${formatDistanceKm(bestResult.distanceKm)}`
-                  : 'No rounds played'}
+                  ? `${bestResult.label} med ${formatDistanceKm(bestResult.distanceKm)}`
+                  : 'Ingen runder spilt'}
               </p>
             </div>
             <div className="action-row">
               <button type="button" className="button" onClick={() => restartGame()}>
-                Play again
+                Spill igjen
               </button>
             </div>
           </div>
@@ -316,11 +343,11 @@ function App() {
                   <p>{result.place}</p>
                 </div>
                 <div className="summary-row__metric">
-                  <span>Distance</span>
+                  <span>Avstand</span>
                   <strong>{formatDistanceKm(result.distanceKm)}</strong>
                 </div>
                 <div className="summary-row__metric">
-                  <span>Score</span>
+                  <span>Poeng</span>
                   <strong>{result.score.toLocaleString()}</strong>
                 </div>
               </article>
@@ -339,26 +366,26 @@ function App() {
       <header className="app-header">
         <div className="app-header__lead">
           <CelebrationRibbon />
-          <span className="eyebrow">17. mai challenge</span>
-          <h1>Bunadkart</h1>
+          <span className="eyebrow">17. mai-utfordring</span>
+          <h2>BunadGuessr</h2>
           <p className="intro">
-            Study the bunad, then place a single guess on Norway as close to the origin as possible.
+            Studer bunaden, og plasser ett gjett på Norgeskartet så nær opphavet som mulig.
           </p>
         </div>
         <div className="progress-strip">
           <div className="progress-pill">
-            <span>Round</span>
+            <span>Runde</span>
             <strong>
               {roundNumber} / {deck.length}
             </strong>
           </div>
           <div className="progress-pill">
-            <span>Total score</span>
+            <span>Total poengsum</span>
             <strong>{totalScore.toLocaleString()}</strong>
           </div>
           <div className="progress-pill">
             <span>Status</span>
-            <strong>{isRevealed ? 'Revealed' : guess ? 'Guess ready' : 'Waiting'}</strong>
+            <strong>{isRevealed ? 'Vist' : guess ? 'Gjett klart' : 'Venter'}</strong>
           </div>
         </div>
       </header>
@@ -366,54 +393,54 @@ function App() {
       <section className="game-layout">
         <article className="card image-panel">
           <div className="panel-heading">
-            <span className="eyebrow">Current bunad</span>
-            <p>{isRevealed ? 'Answer shown below' : 'The name stays hidden until you confirm your guess.'}</p>
+            <span className="eyebrow">Bunaden i denne runden</span>
+            <p>{isRevealed ? 'Fasiten vises under' : 'Navnet holdes skjult til du bekrefter gjettet ditt.'}</p>
           </div>
 
           <div className="image-frame">
             <img
               src={currentBunad.image}
-              alt={isRevealed ? `${currentBunad.label} from ${currentBunad.place}` : 'Bunad for the current round'}
+              alt={isRevealed ? `${currentBunad.label} fra ${currentBunad.place}` : 'Bunad for denne runden'}
             />
           </div>
 
           <div className="prompt-card">
-            <span className="prompt-card__label">Round goal</span>
-            <p>{guess ? 'Guess placed. Click again to adjust before confirming.' : 'Click the map to place your guess.'}</p>
+            <span className="prompt-card__label">Mål for runden</span>
+            <p>{guess ? 'Gjett plassert. Klikk igjen for å justere før du bekrefter.' : 'Klikk på kartet for å plassere gjettet ditt.'}</p>
           </div>
 
           {currentResult ? (
             <div className="result-card">
               <div>
-                <span className="eyebrow">Round result</span>
+                <span className="eyebrow">Resultat</span>
                 <h2>{currentBunad.label}</h2>
                 <p>{currentBunad.place}</p>
               </div>
               <div className="result-metrics">
                 <div className="metric-box">
-                  <span>Distance</span>
+                  <span>Avstand</span>
                   <strong>{formatDistanceKm(currentResult.distanceKm)}</strong>
                 </div>
                 <div className="metric-box">
-                  <span>Round score</span>
+                  <span>Poeng i runden</span>
                   <strong>{currentResult.score.toLocaleString()}</strong>
                 </div>
               </div>
             </div>
           ) : (
             <div className="hint-card">
-              <span className="eyebrow">Scoring</span>
-              <p>Points are calculated from distance in km. Closer guesses score higher.</p>
+              <span className="eyebrow">Poengberegning</span>
+              <p>Poeng regnes ut fra avstand i km. Jo nærmere du gjetter, desto høyere poeng.</p>
             </div>
           )}
 
           <div className="action-row">
             <button type="button" className="button" onClick={handleConfirmGuess} disabled={!guess || isRevealed}>
-              Confirm guess
+              Bekreft gjett
             </button>
             {isRevealed ? (
               <button type="button" className="button button--secondary" onClick={handleNextRound}>
-                {isLastRound ? 'See final results' : 'Next bunad'}
+                {isLastRound ? 'Se sluttresultat' : 'Neste bunad'}
               </button>
             ) : (
               <button
@@ -422,7 +449,7 @@ function App() {
                 onClick={() => setGuess(null)}
                 disabled={!guess}
               >
-                Clear guess
+                Fjern gjett
               </button>
             )}
           </div>
@@ -431,10 +458,10 @@ function App() {
         <article className="card map-panel">
           <div className="panel-heading panel-heading--map">
             <div>
-              <span className="eyebrow">Map</span>
-              <h2>Norway</h2>
+              <span className="eyebrow">Kart</span>
+              <h2>Norge</h2>
             </div>
-            <p>Click once to place your guess.</p>
+            <p>Klikk én gang for å plassere gjettet ditt.</p>
           </div>
 
           <NorwayMap
@@ -447,8 +474,8 @@ function App() {
           />
 
           <div className="map-footer">
-            <p>{isRevealed ? `Correct origin: ${currentBunad.place}` : 'Place one marker anywhere on the map.'}</p>
-            <p>{guess ? 'Your marker is active.' : 'No marker placed yet.'}</p>
+            <p>{isRevealed ? `Riktig opphav: ${currentBunad.place}` : 'Plasser én markør hvor som helst på kartet.'}</p>
+            <p>{guess ? 'Markøren din er plassert.' : 'Ingen markør er plassert ennå.'}</p>
           </div>
         </article>
       </section>
