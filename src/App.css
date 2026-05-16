@@ -1,0 +1,550 @@
+.app-shell {
+  width: min(1320px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0 48px;
+}
+
+.app-shell--state {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+}
+
+.app-header {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 28px;
+  animation: rise-in 420ms ease;
+}
+
+.app-header__lead {
+  display: grid;
+  gap: 14px;
+}
+
+.celebration-ribbon {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  width: fit-content;
+  max-width: 100%;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 32, 91, 0.16);
+  background:
+    linear-gradient(
+      90deg,
+      rgba(186, 12, 47, 0.14),
+      rgba(255, 255, 255, 0.92) 46%,
+      rgba(0, 32, 91, 0.12)
+    );
+  box-shadow: 0 10px 22px rgba(9, 37, 91, 0.08);
+}
+
+.celebration-ribbon--compact {
+  justify-self: start;
+}
+
+.celebration-ribbon__flags {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.celebration-ribbon__text {
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--flag-blue);
+}
+
+.norway-flag {
+  width: 28px;
+  height: auto;
+  flex: none;
+  transform-origin: left center;
+  filter: drop-shadow(0 3px 6px rgba(0, 32, 91, 0.16));
+  animation: flag-wave 4.4s ease-in-out infinite;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  font-weight: 700;
+}
+
+.eyebrow::before {
+  content: '';
+  width: 14px;
+  height: 1px;
+  background: currentColor;
+}
+
+.intro {
+  max-width: 62ch;
+}
+
+.progress-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.progress-pill,
+.metric-box {
+  padding: 16px 18px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(238, 244, 251, 0.84)),
+    rgba(255, 249, 239, 0.78);
+  backdrop-filter: blur(12px);
+}
+
+.progress-pill span,
+.metric-box span,
+.summary-row__metric span,
+.prompt-card__label {
+  display: block;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.progress-pill strong,
+.metric-box strong,
+.summary-row__metric strong {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--ink);
+}
+
+.card,
+.state-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 32px;
+  background: rgba(255, 251, 247, 0.84);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+}
+
+.card::before,
+.state-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 7px;
+  background:
+    linear-gradient(
+      90deg,
+      var(--accent) 0 42%,
+      rgba(255, 255, 255, 0.98) 42% 58%,
+      var(--flag-blue) 58% 100%
+    );
+}
+
+.state-card {
+  width: min(560px, 100%);
+  padding: 36px;
+  display: grid;
+  gap: 18px;
+}
+
+.state-card code {
+  font-family: var(--mono);
+  font-size: 0.92rem;
+}
+
+.game-layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 420px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.image-panel,
+.map-panel,
+.summary-card {
+  padding: 28px;
+  animation: rise-in 520ms ease;
+}
+
+.image-panel {
+  display: grid;
+  gap: 20px;
+}
+
+.map-panel {
+  display: grid;
+  gap: 18px;
+}
+
+.panel-heading {
+  display: grid;
+  gap: 10px;
+}
+
+.panel-heading p,
+.map-footer p,
+.summary-row__copy p,
+.hint-card p,
+.prompt-card p,
+.result-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.panel-heading--map {
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 12px;
+}
+
+.panel-heading--map h2,
+.result-card h2,
+.summary-hero h2 {
+  margin: 0;
+}
+
+.image-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  padding: 18px;
+  background:
+    radial-gradient(circle at 18% 16%, rgba(186, 12, 47, 0.2), transparent 24%),
+    radial-gradient(circle at 82% 18%, rgba(0, 32, 91, 0.18), transparent 24%),
+    linear-gradient(180deg, rgba(251, 252, 255, 0.98), rgba(240, 231, 220, 0.9));
+  min-height: 420px;
+  display: grid;
+  place-items: center;
+}
+
+.image-frame img {
+  width: min(100%, 420px);
+  aspect-ratio: 1;
+  object-fit: contain;
+  filter: drop-shadow(0 18px 22px rgba(21, 37, 67, 0.14));
+}
+
+.prompt-card,
+.hint-card,
+.result-card {
+  border-radius: 24px;
+  padding: 18px 20px;
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid rgba(0, 32, 91, 0.1);
+}
+
+.result-card {
+  display: grid;
+  gap: 16px;
+}
+
+.result-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button,
+.map-toolbar__button {
+  border: 0;
+  border-radius: 999px;
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease,
+    box-shadow 180ms ease,
+    opacity 180ms ease;
+}
+
+.button {
+  padding: 14px 22px;
+  font-weight: 700;
+  color: #fffaf2;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--flag-blue) 100%);
+  box-shadow: 0 12px 20px rgba(9, 37, 91, 0.2);
+}
+
+.button:hover:not(:disabled),
+.map-toolbar__button:hover {
+  transform: translateY(-1px);
+}
+
+.button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.button--secondary {
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(0, 32, 91, 0.16);
+  box-shadow: none;
+}
+
+.map-stage {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  border: 1px solid rgba(0, 32, 91, 0.14);
+  background:
+    radial-gradient(circle at top right, rgba(186, 12, 47, 0.08), transparent 20%),
+    linear-gradient(180deg, rgba(247, 251, 255, 0.92), rgba(227, 237, 248, 0.86));
+}
+
+.map-stage--dragging .norway-map {
+  cursor: grabbing;
+}
+
+.map-toolbar {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+  display: flex;
+  gap: 8px;
+}
+
+.map-toolbar__button {
+  min-width: 48px;
+  padding: 12px 16px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(0, 32, 91, 0.14);
+  box-shadow: 0 10px 18px rgba(9, 37, 91, 0.12);
+}
+
+.norway-map {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  display: block;
+  cursor: crosshair;
+}
+
+.norway-map__land {
+  stroke: rgba(0, 32, 91, 0.82);
+  stroke-width: 1.8;
+  vector-effect: non-scaling-stroke;
+  filter: drop-shadow(0 24px 32px rgba(19, 42, 86, 0.14));
+}
+
+.norway-map__line {
+  stroke: rgba(186, 12, 47, 0.72);
+  stroke-width: 1.8;
+  stroke-dasharray: 10 8;
+  vector-effect: non-scaling-stroke;
+}
+
+.map-marker__pulse {
+  opacity: 0.18;
+  animation: marker-pulse 1.8s ease-out infinite;
+}
+
+.map-marker__ring,
+.map-marker__core {
+  stroke: rgba(255, 255, 255, 0.96);
+  vector-effect: non-scaling-stroke;
+}
+
+.map-marker__ring {
+  fill: none;
+  stroke-width: 1.1;
+}
+
+.map-marker__core {
+  stroke-width: 0.8;
+}
+
+.map-marker--guess .map-marker__pulse,
+.map-marker--guess .map-marker__core {
+  fill: var(--accent);
+}
+
+.map-marker--answer .map-marker__pulse,
+.map-marker--answer .map-marker__core {
+  fill: var(--flag-blue);
+}
+
+.map-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.summary-card {
+  display: grid;
+  gap: 24px;
+}
+
+.summary-hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: end;
+}
+
+.summary-list {
+  display: grid;
+  gap: 12px;
+}
+
+.summary-row {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr) repeat(2, minmax(110px, 140px));
+  gap: 16px;
+  align-items: center;
+  padding: 14px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 32, 91, 0.12);
+}
+
+.summary-row__image {
+  width: 88px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 20px;
+  background: rgba(235, 241, 250, 0.9);
+}
+
+.summary-row__copy h3 {
+  margin: 0 0 4px;
+}
+
+.summary-row__metric {
+  justify-self: end;
+  text-align: right;
+}
+
+@keyframes flag-wave {
+  0%,
+  100% {
+    transform: rotate(-2deg) translateY(0);
+  }
+
+  50% {
+    transform: rotate(2deg) translateY(-1px);
+  }
+}
+
+@keyframes marker-pulse {
+  from {
+    transform: scale(0.88);
+    opacity: 0.24;
+  }
+
+  to {
+    transform: scale(1.55);
+    opacity: 0;
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1080px) {
+  .game-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .panel-heading--map,
+  .map-footer,
+  .summary-hero {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+}
+
+@media (max-width: 720px) {
+  .app-shell {
+    width: min(100%, calc(100% - 20px));
+    padding: 16px 0 28px;
+  }
+
+  .app-header,
+  .image-panel,
+  .map-panel,
+  .summary-card,
+  .state-card {
+    gap: 16px;
+  }
+
+  .image-panel,
+  .map-panel,
+  .summary-card,
+  .state-card {
+    padding: 20px;
+    border-radius: 24px;
+  }
+
+  .celebration-ribbon {
+    gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .celebration-ribbon__flags {
+    gap: 6px;
+  }
+
+  .norway-flag {
+    width: 24px;
+  }
+
+  .progress-strip,
+  .result-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .image-frame {
+    min-height: 320px;
+  }
+
+  .map-toolbar {
+    top: 12px;
+    right: 12px;
+  }
+
+  .map-toolbar__button {
+    min-width: 44px;
+    padding: 10px 14px;
+  }
+  .summary-row {
+    grid-template-columns: 72px 1fr;
+  }
+
+  .summary-row__metric {
+    justify-self: start;
+    text-align: left;
+  }
+}

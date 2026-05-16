@@ -1,0 +1,16 @@
+[
+  {
+    "id": "tronder-1",
+    "label": "Trønderbunad",
+    "place": "Trøndelag",
+    "image": "/bunader/trønder.jpg",
+    "coordinates": [10.5, 63.4]
+  },
+  {
+    "id": "tronder-2",
+    "label": "Trønderbunad variant",
+    "place": "Trøndelag",
+    "image": "/bunader/trønder2.jpg",
+    "coordinates": [10.5, 63.4]
+  }
+]

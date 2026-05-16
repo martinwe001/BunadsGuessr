@@ -1,0 +1,1112 @@
+[
+  {
+    "id": "stort-utval-bunader-fra-heile-landet",
+    "label": "Stort utval bunader frå heile landet",
+    "place": "Norge",
+    "image": "/bunader/001_stort_utval_bunader_fra_heile_landet.jpg",
+    "coordinates": [
+      10.0,
+      62.0
+    ]
+  },
+  {
+    "id": "akerdrakten-dame",
+    "label": "Akerdrakten dame",
+    "place": "Oslo",
+    "image": "/bunader/002_akerdrakten_dame.jpg",
+    "coordinates": [
+      10.75,
+      59.91
+    ]
+  },
+  {
+    "id": "akerdrakten-herre",
+    "label": "Akerdrakten herre",
+    "place": "Oslo",
+    "image": "/bunader/003_akerdrakten_herre.jpg",
+    "coordinates": [
+      10.75,
+      59.91
+    ]
+  },
+  {
+    "id": "akerdrakten-jente",
+    "label": "Akerdrakten jente",
+    "place": "Oslo",
+    "image": "/bunader/004_akerdrakten_jente.jpg",
+    "coordinates": [
+      10.75,
+      59.91
+    ]
+  },
+  {
+    "id": "alta-g6-damebunad",
+    "label": "Alta G6 damebunad",
+    "place": "Alta, Finnmark",
+    "image": "/bunader/005_alta_g6_damebunad.jpg",
+    "coordinates": [
+      23.27,
+      69.97
+    ]
+  },
+  {
+    "id": "alta-herrebunad",
+    "label": "Alta herrebunad",
+    "place": "Alta, Finnmark",
+    "image": "/bunader/006_alta_herrebunad.jpg",
+    "coordinates": [
+      23.27,
+      69.97
+    ]
+  },
+  {
+    "id": "aust-telemark-a32-jente",
+    "label": "Aust-Telemark A32 jente",
+    "place": "Aust-Telemark, Telemark",
+    "image": "/bunader/007_aust_telemark_a32_jente.png",
+    "coordinates": [
+      8.62,
+      59.57
+    ]
+  },
+  {
+    "id": "aust-telemark-a32-damebunad",
+    "label": "Aust-Telemark A32 damebunad",
+    "place": "Aust-Telemark, Telemark",
+    "image": "/bunader/008_aust_telemark_a32_damebunad.jpg",
+    "coordinates": [
+      8.62,
+      59.57
+    ]
+  },
+  {
+    "id": "aust-telemark-a41-damebunad",
+    "label": "Aust-Telemark A41 damebunad",
+    "place": "Aust-Telemark, Telemark",
+    "image": "/bunader/009_aust_telemark_a41_damebunad.jpg",
+    "coordinates": [
+      8.62,
+      59.57
+    ]
+  },
+  {
+    "id": "aust-telemark-dnh-a57-damebunad",
+    "label": "Aust-Telemark DNH A57 damebunad",
+    "place": "Aust-Telemark, Telemark",
+    "image": "/bunader/010_aust_telemark_dnh_a57_damebunad.jpg",
+    "coordinates": [
+      8.62,
+      59.57
+    ]
+  },
+  {
+    "id": "aust-telemark-beltestakk-a82-med-rosa-liv",
+    "label": "Aust-Telemark Beltestakk A82 med rosa liv",
+    "place": "Aust-Telemark, Telemark",
+    "image": "/bunader/011_aust_telemark_beltestakk_a82_med_rosa_liv.jpg",
+    "coordinates": [
+      8.62,
+      59.57
+    ]
+  },
+  {
+    "id": "aust-telemark-beltestakk-a82-med-raudt-liv",
+    "label": "Aust-Telemark – Beltestakk A82 med raudt liv",
+    "place": "Aust-Telemark, Telemark",
+    "image": "/bunader/012_aust_telemark_beltestakk_a82_med_raudt_liv.jpg",
+    "coordinates": [
+      8.62,
+      59.57
+    ]
+  },
+  {
+    "id": "aust-telemark-beltestakk-a82-med-kvitt-liv",
+    "label": "Aust-Telemark – Beltestakk A82 med kvitt liv",
+    "place": "Aust-Telemark, Telemark",
+    "image": "/bunader/013_aust_telemark_beltestakk_a82_med_kvitt_liv.jpg",
+    "coordinates": [
+      8.62,
+      59.57
+    ]
+  },
+  {
+    "id": "aust-telemark-beltestakk-a82-med-brodert-forkle",
+    "label": "Aust-Telemark – Beltestakk A82 med brodert forkle",
+    "place": "Aust-Telemark, Telemark",
+    "image": "/bunader/014_aust_telemark_beltestakk_a82_med_brodert_forkle.png",
+    "coordinates": [
+      8.62,
+      59.57
+    ]
+  },
+  {
+    "id": "aust-telemark-beltestakk-a82-med-gult-liv",
+    "label": "Aust-Telemark – Beltestakk A82 med gult liv",
+    "place": "Aust-Telemark, Telemark",
+    "image": "/bunader/015_aust_telemark_beltestakk_a82_med_gult_liv.jpg",
+    "coordinates": [
+      8.62,
+      59.57
+    ]
+  },
+  {
+    "id": "aust-telemark-beltestakk-a82-med-lilla-liv",
+    "label": "Aust-Telemark – Beltestakk A82 med lilla liv",
+    "place": "Aust-Telemark, Telemark",
+    "image": "/bunader/016_aust_telemark_beltestakk_a82_med_lilla_liv.jpg",
+    "coordinates": [
+      8.62,
+      59.57
+    ]
+  },
+  {
+    "id": "aust-telemark-herrebunad",
+    "label": "Aust-Telemark herrebunad",
+    "place": "Aust-Telemark, Telemark",
+    "image": "/bunader/017_aust_telemark_herrebunad.jpg",
+    "coordinates": [
+      8.62,
+      59.57
+    ]
+  },
+  {
+    "id": "aust-telmark-beltestakk-a98-med-brodert-liv-kvitt",
+    "label": "Aust-Telmark – Beltestakk A98 med brodert liv, kvitt",
+    "place": "Aust-Telemark, Telemark",
+    "image": "/bunader/018_aust_telmark_beltestakk_a98_med_brodert_liv_kvitt.jpg",
+    "coordinates": [
+      8.62,
+      59.57
+    ]
+  },
+  {
+    "id": "bardu-malselv-g3-damebunad",
+    "label": "Bardu-Målselv G3 damebunad",
+    "place": "Bardu og Målselv, Troms",
+    "image": "/bunader/019_bardu_malselv_g3_damebunad.jpg",
+    "coordinates": [
+      18.65,
+      69.05
+    ]
+  },
+  {
+    "id": "fana-herrebunad",
+    "label": "Fana herrebunad",
+    "place": "Fana, Bergen",
+    "image": "/bunader/020_fana_herrebunad.jpg",
+    "coordinates": [
+      5.35,
+      60.3
+    ]
+  },
+  {
+    "id": "fanabunad-gut",
+    "label": "Fanabunad gut",
+    "place": "Fana, Bergen",
+    "image": "/bunader/021_fanabunad_gut.png",
+    "coordinates": [
+      5.35,
+      60.3
+    ]
+  },
+  {
+    "id": "follo-damebunad",
+    "label": "Follo damebunad",
+    "place": "Follo, Akershus",
+    "image": "/bunader/022_follo_damebunad.jpg",
+    "coordinates": [
+      10.83,
+      59.72
+    ]
+  },
+  {
+    "id": "gauldal-herrebunad",
+    "label": "Gauldal herrebunad",
+    "place": "Gauldal, Trøndelag",
+    "image": "/bunader/023_gauldal_herrebunad.jpg",
+    "coordinates": [
+      10.28,
+      63.04
+    ]
+  },
+  {
+    "id": "gudbrandsdalen-b1-festbunad",
+    "label": "Gudbrandsdalen B1 Festbunad",
+    "place": "Gudbrandsdalen, Innlandet",
+    "image": "/bunader/024_gudbrandsdalen_b1_festbunad.jpg",
+    "coordinates": [
+      9.55,
+      61.77
+    ]
+  },
+  {
+    "id": "gudbrandsdalen-b1xx-festbunad",
+    "label": "Gudbrandsdalen B1xx Festbunad",
+    "place": "Gudbrandsdalen, Innlandet",
+    "image": "/bunader/025_gudbrandsdalen_b1xx_festbunad.jpg",
+    "coordinates": [
+      9.55,
+      61.77
+    ]
+  },
+  {
+    "id": "gudbrandsdalen-b2-maria-jordet",
+    "label": "Gudbrandsdalen B2 Maria Jordet",
+    "place": "Gudbrandsdalen, Innlandet",
+    "image": "/bunader/026_gudbrandsdalen_b2_maria_jordet.jpg",
+    "coordinates": [
+      9.55,
+      61.77
+    ]
+  },
+  {
+    "id": "gudbrandsdalen-b53-kvinnebunad",
+    "label": "Gudbrandsdalen B53 Kvinnebunad",
+    "place": "Gudbrandsdalen, Innlandet",
+    "image": "/bunader/027_gudbrandsdalen_b53_kvinnebunad.jpg",
+    "coordinates": [
+      9.55,
+      61.77
+    ]
+  },
+  {
+    "id": "gudbrandsdalen-b94-damask-kjol",
+    "label": "Gudbrandsdalen B94 Damask-kjol",
+    "place": "Gudbrandsdalen, Innlandet",
+    "image": "/bunader/028_gudbrandsdalen_b94_damask_kjol.jpg",
+    "coordinates": [
+      9.55,
+      61.77
+    ]
+  },
+  {
+    "id": "gudbrandsdalen-b95-aksel-waldemar-damebunad",
+    "label": "Gudbrandsdalen B95 – Aksel Waldemar damebunad",
+    "place": "Gudbrandsdalen, Innlandet",
+    "image": "/bunader/029_gudbrandsdalen_b95_aksel_waldemar_damebunad.jpg",
+    "coordinates": [
+      9.55,
+      61.77
+    ]
+  },
+  {
+    "id": "gudbrandsdalen-randastakk-damebunad",
+    "label": "Gudbrandsdalen Råndastakk, damebunad",
+    "place": "Gudbrandsdalen, Innlandet",
+    "image": "/bunader/030_gudbrandsdalen_randastakk_damebunad.jpg",
+    "coordinates": [
+      9.55,
+      61.77
+    ]
+  },
+  {
+    "id": "gudbrandsdalen-herrebunad-lang-jakke",
+    "label": "Gudbrandsdalen herrebunad, lang jakke",
+    "place": "Gudbrandsdalen, Innlandet",
+    "image": "/bunader/031_gudbrandsdalen_herrebunad_lang_jakke.jpg",
+    "coordinates": [
+      9.55,
+      61.77
+    ]
+  },
+  {
+    "id": "gudbrandsdalen-herrebunad-kort-jakke",
+    "label": "Gudbrandsdalen herrebunad, kort jakke",
+    "place": "Gudbrandsdalen, Innlandet",
+    "image": "/bunader/032_gudbrandsdalen_herrebunad_kort_jakke.jpg",
+    "coordinates": [
+      9.55,
+      61.77
+    ]
+  },
+  {
+    "id": "hallingdal-c4-huldabunad-1994",
+    "label": "Hallingdal – C4 Huldabunad 1994",
+    "place": "Hallingdal, Buskerud",
+    "image": "/bunader/033_hallingdal_c4_huldabunad_1994.jpg",
+    "coordinates": [
+      8.94,
+      60.7
+    ]
+  },
+  {
+    "id": "hallingdal-c5-huldabunad-2000",
+    "label": "Hallingdal – C5 Huldabunad 2000",
+    "place": "Hallingdal, Buskerud",
+    "image": "/bunader/034_hallingdal_c5_huldabunad_2000.jpg",
+    "coordinates": [
+      8.94,
+      60.7
+    ]
+  },
+  {
+    "id": "hallingdal-helgestakk-dame",
+    "label": "Hallingdal Helgestakk, dame",
+    "place": "Hallingdal, Buskerud",
+    "image": "/bunader/035_hallingdal_helgestakk_dame.jpg",
+    "coordinates": [
+      8.94,
+      60.7
+    ]
+  },
+  {
+    "id": "hallingdal-helgestakk-jente",
+    "label": "Hallingdal Helgestakk, jente",
+    "place": "Hallingdal, Buskerud",
+    "image": "/bunader/036_hallingdal_helgestakk_jente.jpg",
+    "coordinates": [
+      8.94,
+      60.7
+    ]
+  },
+  {
+    "id": "hallingdal-c17-herrebunad",
+    "label": "Hallingdal C17 herrebunad",
+    "place": "Hallingdal, Buskerud",
+    "image": "/bunader/037_hallingdal_c17_herrebunad.jpg",
+    "coordinates": [
+      8.94,
+      60.7
+    ]
+  },
+  {
+    "id": "hardanger-damebunad-rdt-liv",
+    "label": "Hardanger damebunad, rødt liv",
+    "place": "Hardanger, Vestland",
+    "image": "/bunader/038_hardanger_damebunad_rdt_liv.jpg",
+    "coordinates": [
+      6.43,
+      60.33
+    ]
+  },
+  {
+    "id": "hardanger-damebunad-grnt-liv",
+    "label": "Hardanger damebunad, grønt liv",
+    "place": "Hardanger, Vestland",
+    "image": "/bunader/039_hardanger_damebunad_grnt_liv.jpg",
+    "coordinates": [
+      6.43,
+      60.33
+    ]
+  },
+  {
+    "id": "hardanger-damebunad-lilla-liv",
+    "label": "Hardanger damebunad, lilla liv",
+    "place": "Hardanger, Vestland",
+    "image": "/bunader/040_hardanger_damebunad_lilla_liv.jpg",
+    "coordinates": [
+      6.43,
+      60.33
+    ]
+  },
+  {
+    "id": "hardanger-jentebunad",
+    "label": "Hardanger jentebunad",
+    "place": "Hardanger, Vestland",
+    "image": "/bunader/041_hardanger_jentebunad.jpg",
+    "coordinates": [
+      6.43,
+      60.33
+    ]
+  },
+  {
+    "id": "indre-nordhordland-herrebunad",
+    "label": "Indre Nordhordland herrebunad",
+    "place": "Indre Nordhordland, Vestland",
+    "image": "/bunader/042_indre_nordhordland_herrebunad.jpg",
+    "coordinates": [
+      5.7,
+      60.65
+    ]
+  },
+  {
+    "id": "kvam-herrebunad",
+    "label": "Kvam herrebunad",
+    "place": "Kvam, Hardanger",
+    "image": "/bunader/043_kvam_herrebunad.jpg",
+    "coordinates": [
+      6.14,
+      60.37
+    ]
+  },
+  {
+    "id": "lier-herrebunad",
+    "label": "Lier herrebunad",
+    "place": "Lier, Buskerud",
+    "image": "/bunader/044_lier_herrebunad.jpg",
+    "coordinates": [
+      10.25,
+      59.79
+    ]
+  },
+  {
+    "id": "lundeby-damebunad",
+    "label": "Lundeby damebunad",
+    "place": "Solør / Vest-Oppland",
+    "image": "/bunader/045_lundeby_damebunad.jpg",
+    "coordinates": [
+      11.83,
+      60.72
+    ]
+  },
+  {
+    "id": "masfjord-herrebunad",
+    "label": "Masfjord herrebunad",
+    "place": "Masfjorden, Vestland",
+    "image": "/bunader/046_masfjord_herrebunad.jpg",
+    "coordinates": [
+      5.3,
+      60.8
+    ]
+  },
+  {
+    "id": "nordland-g1-damebunad",
+    "label": "Nordland G1 damebunad",
+    "place": "Nordland",
+    "image": "/bunader/047_nordland_g1_damebunad.jpg",
+    "coordinates": [
+      14.38,
+      67.28
+    ]
+  },
+  {
+    "id": "nordland-herrebunad",
+    "label": "Nordland herrebunad",
+    "place": "Nordland",
+    "image": "/bunader/048_nordland_herrebunad.png",
+    "coordinates": [
+      14.38,
+      67.28
+    ]
+  },
+  {
+    "id": "nordfjord-herrebunad",
+    "label": "Nordfjord herrebunad",
+    "place": "Nordfjord, Vestland",
+    "image": "/bunader/049_nordfjord_herrebunad.jpg",
+    "coordinates": [
+      6.03,
+      61.91
+    ]
+  },
+  {
+    "id": "nordmre-herrebunad",
+    "label": "Nordmøre herrebunad",
+    "place": "Nordmøre, Møre og Romsdal",
+    "image": "/bunader/050_nordmre_herrebunad.jpg",
+    "coordinates": [
+      8.58,
+      63.11
+    ]
+  },
+  {
+    "id": "nordmre-h1-damebunad",
+    "label": "Nordmøre H1 damebunad",
+    "place": "Nordmøre, Møre og Romsdal",
+    "image": "/bunader/051_nordmre_h1_damebunad.jpg",
+    "coordinates": [
+      8.58,
+      63.11
+    ]
+  },
+  {
+    "id": "nordmre-h2-damebunad",
+    "label": "Nordmøre H2 damebunad",
+    "place": "Nordmøre, Møre og Romsdal",
+    "image": "/bunader/052_nordmre_h2_damebunad.jpg",
+    "coordinates": [
+      8.58,
+      63.11
+    ]
+  },
+  {
+    "id": "numedal-herrebunad",
+    "label": "Numedal herrebunad",
+    "place": "Numedal, Buskerud",
+    "image": "/bunader/053_numedal_herrebunad.jpg",
+    "coordinates": [
+      9.0,
+      60.0
+    ]
+  },
+  {
+    "id": "ringerike-damebunad",
+    "label": "Ringerike damebunad",
+    "place": "Ringerike, Buskerud",
+    "image": "/bunader/054_ringerike_damebunad.png",
+    "coordinates": [
+      10.25,
+      60.17
+    ]
+  },
+  {
+    "id": "rogaland-damebunad-jelsa-k1-og-frafjord-k3",
+    "label": "Rogaland damebunad – Jelsa K1 og Frafjord K3",
+    "place": "Rogaland",
+    "image": "/bunader/055_rogaland_damebunad_jelsa_k1_og_frafjord_k3.jpg",
+    "coordinates": [
+      6.0,
+      59.1
+    ]
+  },
+  {
+    "id": "rogaland-herrebunad",
+    "label": "Rogaland herrebunad",
+    "place": "Rogaland",
+    "image": "/bunader/056_rogaland_herrebunad.jpg",
+    "coordinates": [
+      6.0,
+      59.1
+    ]
+  },
+  {
+    "id": "romerike-l40-damebunad",
+    "label": "Romerike L40 damebunad",
+    "place": "Romerike, Akershus",
+    "image": "/bunader/057_romerike_l40_damebunad.jpg",
+    "coordinates": [
+      11.1,
+      60.0
+    ]
+  },
+  {
+    "id": "romerike-l46-damebunad",
+    "label": "Romerike L46 damebunad",
+    "place": "Romerike, Akershus",
+    "image": "/bunader/058_romerike_l46_damebunad.jpg",
+    "coordinates": [
+      11.1,
+      60.0
+    ]
+  },
+  {
+    "id": "romerike-l55-damebunad",
+    "label": "Romerike L55 damebunad",
+    "place": "Romerike, Akershus",
+    "image": "/bunader/059_romerike_l55_damebunad.jpg",
+    "coordinates": [
+      11.1,
+      60.0
+    ]
+  },
+  {
+    "id": "romerike-l52-herrebunad",
+    "label": "Romerike L52 herrebunad",
+    "place": "Romerike, Akershus",
+    "image": "/bunader/060_romerike_l52_herrebunad.jpg",
+    "coordinates": [
+      11.1,
+      60.0
+    ]
+  },
+  {
+    "id": "romeriksbunad-gut",
+    "label": "Romeriksbunad gut",
+    "place": "Romerike, Akershus",
+    "image": "/bunader/061_romeriksbunad_gut.jpg",
+    "coordinates": [
+      11.1,
+      60.0
+    ]
+  },
+  {
+    "id": "romsdal-m3-bolsy-damebunad",
+    "label": "Romsdal M3 Bolsøy, damebunad",
+    "place": "Romsdal, Møre og Romsdal",
+    "image": "/bunader/062_romsdal_m3_bolsy_damebunad.jpg",
+    "coordinates": [
+      7.35,
+      62.74
+    ]
+  },
+  {
+    "id": "romsdal-embetsmannsdrakt",
+    "label": "Romsdal – Embetsmannsdrakt",
+    "place": "Romsdal, Møre og Romsdal",
+    "image": "/bunader/063_romsdal_embetsmannsdrakt.jpg",
+    "coordinates": [
+      7.35,
+      62.74
+    ]
+  },
+  {
+    "id": "romsdal-herrebunad",
+    "label": "Romsdal herrebunad",
+    "place": "Romsdal, Møre og Romsdal",
+    "image": "/bunader/064_romsdal_herrebunad.jpg",
+    "coordinates": [
+      7.35,
+      62.74
+    ]
+  },
+  {
+    "id": "sigdal-eggedal-lienbunad-i-2a",
+    "label": "Sigdal-Eggedal – Lienbunad I 2A",
+    "place": "Sigdal og Eggedal, Buskerud",
+    "image": "/bunader/065_sigdal_eggedal_lienbunad_i_2a.png",
+    "coordinates": [
+      9.6,
+      60.05
+    ]
+  },
+  {
+    "id": "sigdal-eggedal-hoffart-i-2c",
+    "label": "Sigdal-Eggedal – Hoffart I 2C",
+    "place": "Sigdal og Eggedal, Buskerud",
+    "image": "/bunader/066_sigdal_eggedal_hoffart_i_2c.jpg",
+    "coordinates": [
+      9.6,
+      60.05
+    ]
+  },
+  {
+    "id": "sigdal-eggedal-krdsherad-kryllingbunad-i-3",
+    "label": "Sigdal-Eggedal-Krødsherad – Kryllingbunad I 3",
+    "place": "Sigdal, Eggedal og Krødsherad, Buskerud",
+    "image": "/bunader/067_sigdal_eggedal_krdsherad_kryllingbunad_i_3.png",
+    "coordinates": [
+      9.65,
+      60.05
+    ]
+  },
+  {
+    "id": "sogn-damebunad",
+    "label": "Sogn damebunad",
+    "place": "Sogn, Vestland",
+    "image": "/bunader/068_sogn_damebunad.jpg",
+    "coordinates": [
+      7.1,
+      61.18
+    ]
+  },
+  {
+    "id": "sogn-n38-herrebunad",
+    "label": "Sogn N38 herrebunad",
+    "place": "Sogn, Vestland",
+    "image": "/bunader/069_sogn_n38_herrebunad.jpg",
+    "coordinates": [
+      7.1,
+      61.18
+    ]
+  },
+  {
+    "id": "sogn-herrebunad-kvit",
+    "label": "Sogn herrebunad kvit",
+    "place": "Sogn, Vestland",
+    "image": "/bunader/070_sogn_herrebunad_kvit.jpg",
+    "coordinates": [
+      7.1,
+      61.18
+    ]
+  },
+  {
+    "id": "sogn-herrebunad-raud",
+    "label": "Sogn herrebunad raud",
+    "place": "Sogn, Vestland",
+    "image": "/bunader/071_sogn_herrebunad_raud.jpg",
+    "coordinates": [
+      7.1,
+      61.18
+    ]
+  },
+  {
+    "id": "sogn-spelemann-herrebunad",
+    "label": "Sogn Spelemann herrebunad",
+    "place": "Sogn, Vestland",
+    "image": "/bunader/072_sogn_spelemann_herrebunad.jpg",
+    "coordinates": [
+      7.1,
+      61.18
+    ]
+  },
+  {
+    "id": "sunnfjord-herrebunad",
+    "label": "Sunnfjord herrebunad",
+    "place": "Sunnfjord, Vestland",
+    "image": "/bunader/073_sunnfjord_herrebunad.jpg",
+    "coordinates": [
+      6.1,
+      61.45
+    ]
+  },
+  {
+    "id": "sunnhordland-herrebunad",
+    "label": "Sunnhordland herrebunad",
+    "place": "Sunnhordland, Vestland",
+    "image": "/bunader/074_sunnhordland_herrebunad.jpg",
+    "coordinates": [
+      5.5,
+      59.85
+    ]
+  },
+  {
+    "id": "sunnmre-p1-damebunad-norddal",
+    "label": "Sunnmøre P1 damebunad – Norddal",
+    "place": "Sunnmøre, Møre og Romsdal",
+    "image": "/bunader/075_sunnmre_p1_damebunad_norddal.jpg",
+    "coordinates": [
+      6.4,
+      62.47
+    ]
+  },
+  {
+    "id": "sunnmre-p3-damebunad-rskog",
+    "label": "Sunnmøre P3 damebunad – Ørskog",
+    "place": "Sunnmøre, Møre og Romsdal",
+    "image": "/bunader/076_sunnmre_p3_damebunad_rskog.jpg",
+    "coordinates": [
+      6.4,
+      62.47
+    ]
+  },
+  {
+    "id": "sunnmre-herrebunad",
+    "label": "Sunnmøre herrebunad",
+    "place": "Sunnmøre, Møre og Romsdal",
+    "image": "/bunader/077_sunnmre_herrebunad.jpg",
+    "coordinates": [
+      6.4,
+      62.47
+    ]
+  },
+  {
+    "id": "srkedalen-v97-damebunad",
+    "label": "Sørkedalen V97 damebunad",
+    "place": "Sørkedalen, Oslo",
+    "image": "/bunader/078_srkedalen_v97_damebunad.jpg",
+    "coordinates": [
+      10.62,
+      60.02
+    ]
+  },
+  {
+    "id": "troms-damebunad-med-gyllent-liv",
+    "label": "Troms damebunad med gyllent liv",
+    "place": "Troms",
+    "image": "/bunader/079_troms_damebunad_med_gyllent_liv.jpg",
+    "coordinates": [
+      18.95,
+      69.35
+    ]
+  },
+  {
+    "id": "troms-damebunad-med-raudt-liv",
+    "label": "Troms damebunad med raudt liv",
+    "place": "Troms",
+    "image": "/bunader/080_troms_damebunad_med_raudt_liv.jpg",
+    "coordinates": [
+      18.95,
+      69.35
+    ]
+  },
+  {
+    "id": "troms-herrebunad",
+    "label": "Troms herrebunad",
+    "place": "Troms",
+    "image": "/bunader/081_troms_herrebunad.jpg",
+    "coordinates": [
+      18.95,
+      69.35
+    ]
+  },
+  {
+    "id": "troms-jentebunad",
+    "label": "Troms jentebunad",
+    "place": "Troms",
+    "image": "/bunader/082_troms_jentebunad.png",
+    "coordinates": [
+      18.95,
+      69.35
+    ]
+  },
+  {
+    "id": "trndelag-damebunad-bla",
+    "label": "Trøndelag damebunad, blå",
+    "place": "Trøndelag",
+    "image": "/bunader/083_trndelag_damebunad_bla.jpg",
+    "coordinates": [
+      10.5,
+      63.4
+    ]
+  },
+  {
+    "id": "trndelag-damebunad-grn",
+    "label": "Trøndelag damebunad, grøn",
+    "place": "Trøndelag",
+    "image": "/bunader/084_trndelag_damebunad_grn.jpg",
+    "coordinates": [
+      10.5,
+      63.4
+    ]
+  },
+  {
+    "id": "trndelag-damebunad-raud",
+    "label": "Trøndelag damebunad, raud",
+    "place": "Trøndelag",
+    "image": "/bunader/085_trndelag_damebunad_raud.jpg",
+    "coordinates": [
+      10.5,
+      63.4
+    ]
+  },
+  {
+    "id": "trndelag-damebunad-svart-gloria",
+    "label": "Trøndelag damebunad, svart Gloria",
+    "place": "Trøndelag",
+    "image": "/bunader/086_trndelag_damebunad_svart_gloria.jpg",
+    "coordinates": [
+      10.5,
+      63.4
+    ]
+  },
+  {
+    "id": "sr-trndelag-herrebunad",
+    "label": "Sør-Trøndelag herrebunad",
+    "place": "Sør-Trøndelag, Trøndelag",
+    "image": "/bunader/087_sr_trndelag_herrebunad.jpg",
+    "coordinates": [
+      10.4,
+      63.1
+    ]
+  },
+  {
+    "id": "valdres-damebunad",
+    "label": "Valdres damebunad",
+    "place": "Valdres, Innlandet",
+    "image": "/bunader/088_valdres_damebunad.jpg",
+    "coordinates": [
+      9.12,
+      61.09
+    ]
+  },
+  {
+    "id": "valdres-herrebunad",
+    "label": "Valdres herrebunad",
+    "place": "Valdres, Innlandet",
+    "image": "/bunader/089_valdres_herrebunad.jpg",
+    "coordinates": [
+      9.12,
+      61.09
+    ]
+  },
+  {
+    "id": "vest-agder-herrebunad",
+    "label": "Vest-Agder herrebunad",
+    "place": "Vest-Agder, Agder",
+    "image": "/bunader/090_vest_agder_herrebunad.jpg",
+    "coordinates": [
+      7.5,
+      58.3
+    ]
+  },
+  {
+    "id": "vestfold-1932-damebunad",
+    "label": "Vestfold 1932 damebunad",
+    "place": "Vestfold",
+    "image": "/bunader/091_vestfold_1932_damebunad.jpg",
+    "coordinates": [
+      10.3,
+      59.2
+    ]
+  },
+  {
+    "id": "vestfold-dnh56-damebunad",
+    "label": "Vestfold DNH56 damebunad",
+    "place": "Vestfold",
+    "image": "/bunader/092_vestfold_dnh56_damebunad.png",
+    "coordinates": [
+      10.3,
+      59.2
+    ]
+  },
+  {
+    "id": "vestfold-damebunad-tranum-rer-t1",
+    "label": "Vestfold damebunad Tranum Røer T1",
+    "place": "Vestfold",
+    "image": "/bunader/093_vestfold_damebunad_tranum_rer_t1.jpg",
+    "coordinates": [
+      10.3,
+      59.2
+    ]
+  },
+  {
+    "id": "vest-telemark-damebunad-u55",
+    "label": "Vest-Telemark damebunad U55",
+    "place": "Vest-Telemark, Telemark",
+    "image": "/bunader/094_vest_telemark_damebunad_u55.jpg",
+    "coordinates": [
+      8.0,
+      59.5
+    ]
+  },
+  {
+    "id": "vest-telemark-damebunad-u58",
+    "label": "Vest-Telemark damebunad U58",
+    "place": "Vest-Telemark, Telemark",
+    "image": "/bunader/095_vest_telemark_damebunad_u58.png",
+    "coordinates": [
+      8.0,
+      59.5
+    ]
+  },
+  {
+    "id": "vestfold-herrebunad",
+    "label": "Vestfold herrebunad",
+    "place": "Vestfold",
+    "image": "/bunader/096_vestfold_herrebunad.jpg",
+    "coordinates": [
+      10.3,
+      59.2
+    ]
+  },
+  {
+    "id": "vestfold-borre-herrebunad",
+    "label": "Vestfold, Borre herrebunad",
+    "place": "Vestfold",
+    "image": "/bunader/097_vestfold_borre_herrebunad.jpg",
+    "coordinates": [
+      10.3,
+      59.2
+    ]
+  },
+  {
+    "id": "ytre-nordhordland-herrebunad",
+    "label": "Ytre Nordhordland herrebunad",
+    "place": "Ytre Nordhordland, Vestland",
+    "image": "/bunader/098_ytre_nordhordland_herrebunad.jpg",
+    "coordinates": [
+      5.18,
+      60.56
+    ]
+  },
+  {
+    "id": "gammal-sterdal-damebunad-25",
+    "label": "Gammal Østerdal damebunad Ø25",
+    "place": "Østerdalen, Innlandet",
+    "image": "/bunader/099_gammal_sterdal_damebunad_25.jpg",
+    "coordinates": [
+      11.1,
+      61.4
+    ]
+  },
+  {
+    "id": "voss-herrebunad",
+    "label": "Voss herrebunad",
+    "place": "Voss, Vestland",
+    "image": "/bunader/100_voss_herrebunad.jpg",
+    "coordinates": [
+      6.42,
+      60.63
+    ]
+  },
+  {
+    "id": "sterdal-vallset-90-damebunad",
+    "label": "Østerdal – Vallset Ø90 damebunad",
+    "place": "Østerdalen, Innlandet",
+    "image": "/bunader/101_sterdal_vallset_90_damebunad.jpg",
+    "coordinates": [
+      11.1,
+      61.4
+    ]
+  },
+  {
+    "id": "sterdal-herrebunad",
+    "label": "Østerdal herrebunad",
+    "place": "Østerdalen, Innlandet",
+    "image": "/bunader/102_sterdal_herrebunad.jpg",
+    "coordinates": [
+      11.1,
+      61.4
+    ]
+  },
+  {
+    "id": "sterdal-marie-aaen-grn-48-damebunad",
+    "label": "Østerdal – Marie Aaen Grøn Ø48 damebunad",
+    "place": "Østerdalen, Innlandet",
+    "image": "/bunader/103_sterdal_marie_aaen_grn_48_damebunad.jpg",
+    "coordinates": [
+      11.1,
+      61.4
+    ]
+  },
+  {
+    "id": "sterdal-marie-aaen-svart-48-damebunad",
+    "label": "Østerdal – Marie Aaen Svart Ø48 damebunad",
+    "place": "Østerdalen, Innlandet",
+    "image": "/bunader/104_sterdal_marie_aaen_svart_48_damebunad.jpg",
+    "coordinates": [
+      11.1,
+      61.4
+    ]
+  },
+  {
+    "id": "sterdal-61-herrebunad",
+    "label": "Østerdal Ø61 herrebunad",
+    "place": "Østerdalen, Innlandet",
+    "image": "/bunader/105_sterdal_61_herrebunad.jpg",
+    "coordinates": [
+      11.1,
+      61.4
+    ]
+  },
+  {
+    "id": "stfold-damebunad-dnh",
+    "label": "Østfold damebunad DNH",
+    "place": "Østfold",
+    "image": "/bunader/106_stfold_damebunad_dnh.jpg",
+    "coordinates": [
+      11.2,
+      59.35
+    ]
+  },
+  {
+    "id": "stfold-damebunad",
+    "label": "Østfold damebunad",
+    "place": "Østfold",
+    "image": "/bunader/107_stfold_damebunad.jpg",
+    "coordinates": [
+      11.2,
+      59.35
+    ]
+  },
+  {
+    "id": "stfold-damebunad-lken",
+    "label": "Østfold damebunad Løken",
+    "place": "Østfold",
+    "image": "/bunader/108_stfold_damebunad_lken.jpg",
+    "coordinates": [
+      11.2,
+      59.35
+    ]
+  },
+  {
+    "id": "stfold-herrebunad-med-bla-jakke",
+    "label": "Østfold herrebunad med blå jakke",
+    "place": "Østfold",
+    "image": "/bunader/109_stfold_herrebunad_med_bla_jakke.jpg",
+    "coordinates": [
+      11.2,
+      59.35
+    ]
+  },
+  {
+    "id": "stfold-herrebunad-med-kvit-jakke",
+    "label": "Østfold herrebunad med kvit jakke",
+    "place": "Østfold",
+    "image": "/bunader/110_stfold_herrebunad_med_kvit_jakke.jpg",
+    "coordinates": [
+      11.2,
+      59.35
+    ]
+  },
+  {
+    "id": "amli-herrebunad",
+    "label": "Åmli herrebunad",
+    "place": "Åmli, Agder",
+    "image": "/bunader/111_amli_herrebunad.jpg",
+    "coordinates": [
+      8.48,
+      58.77
+    ]
+  }
+]
